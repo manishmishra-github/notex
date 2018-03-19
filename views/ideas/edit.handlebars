@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+
+<div class="card card-body">
+<h4 class="card-title">Edit Notes</h4>
+    <form action="/ideas/{{e.id}}?_method=PUT" method="POST">
+<fieldset class="form-group">
+<label for="first_name">Title</label>
+<input type="text" class="form-control" id="first_name" name="title" value="{{e.title}}" required>
+</fieldset>
+<fieldset class="form-group">
+<label for="last_name">Details</label>
+<input type="text" class="form-control" id="last_name" name="details" value="{{e.details}}" required>
+</fieldset>
+<input type="hidden" name="_method" value="PUT"/>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
